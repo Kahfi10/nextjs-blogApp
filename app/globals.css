@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -110,6 +111,12 @@
   --sidebar-accent-foreground: oklch(0.985 0.002 247.839);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+
+  --f-5-min: 30;
+	--f-5-max: 120;
+	--step-5: calc(
+		((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+			var(--fluid-bp));
 }
 
 @layer base {
@@ -129,3 +136,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+#smooth-wrapper {
+  font-family: 'Unbounded', sans-serif;
+}
+
+.pin-spacer {
+  pointer-events: none;
+}
+
+:root {
+  --f-5-min: 30;
+	--f-5-max: 120;
+	--step-5: calc(
+		((var(--f-5-min) / 16) * 1rem) + (var(--f-5-max) - var(--f-5-min)) *
+			var(--fluid-bp));
+}
+

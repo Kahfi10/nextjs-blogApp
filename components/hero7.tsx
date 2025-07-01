@@ -57,7 +57,7 @@ const Hero7 = ({
   },
 }: Hero7Props) => {
   return (
-    <section className="py-35 flex w-full items-center justify-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <section className="py-50 flex w-full items-center justify-center bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container flex flex-col items-center justify-center text-center">
       <h1 className="inline-flex flex-wrap justify-center whitespace-pre-wrap text-5xl font-extrabold leading-tight text-gray-700 text-shadow-2xs lg:text-6xl h-full mb-5">
         {heading.split(' ').slice(0, 2).join(' ')}{' '}
