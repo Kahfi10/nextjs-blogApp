@@ -95,7 +95,7 @@ const Hero7 = ({
         </TextLoop>
       </h1>
       <div className="mx-auto flex max-w-5xl flex-col gap-6">
-        <p className="text-gray-800 font-media text-balance lg:text-xl">
+        <p className="text-gray-800 font-media text-lg lg:text-xl">
         {description}
         </p>
       </div>
