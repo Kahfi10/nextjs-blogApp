@@ -36,9 +36,6 @@ export default function RootLayout({
         <div>
           <Header />
         </div>
-        <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto">
-          <ScrollingPhoto />
-        </div>
         {children}
       </body>
     </html>

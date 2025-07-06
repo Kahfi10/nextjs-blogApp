@@ -19,12 +19,12 @@ export default function ScrollingPhoto() {
             y: 50,
             ease: "expo.out",
             scrollTrigger: {
-                trigger: '.heading',
-                start: "top 50%",
+                trigger: '.heading .images .pin',
+                start: "center 50%",
                 scrub: true,
                 pin: '.pin',
-                pinSpacing: false,
-                markers: false, // ubah ini ke false
+                pinSpacing: true,
+                markers: true, // ubah ini ke false
             },
         });
 
@@ -38,7 +38,7 @@ export default function ScrollingPhoto() {
 <div id="smooth-wrapper">
     <div id="smooth-content">
         <main>
-            <section className="min-h-screen">
+            <section className="relative z-1">
                 <div className="heading relative z-2 mix-blend-difference -webkit-perspective-1000px visibility-visible -backface-visibility-visible transform-rotate-(0.1deg)">
                     <div className="pin relative z-2">
                         <h1 className="relative text-9xl uppercase text-center"><span className="clamp relative z-1">Find </span>
@@ -54,7 +54,7 @@ export default function ScrollingPhoto() {
                 </div>
             </section>
 
-            <section className="spacer h-[100vh]">
+            <section className="spacer h-[50vh]">
             </section>
         </main>
     </div>
