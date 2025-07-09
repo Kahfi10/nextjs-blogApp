@@ -1,12 +1,11 @@
 import Header from "../components/Header";
-import { PhotoSection } from "../components/photoSection";
-
+import SectionPhoto from "../components/SectionPhoto";
 
 export default function Home() {
   return (
     <>
         <Header />
-        <PhotoSection />
+        <SectionPhoto />
     </>
   );
 }

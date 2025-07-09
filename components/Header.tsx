@@ -1,5 +1,4 @@
 import { Hero7 } from "@/components/hero7";
-import { Navbar1 } from "./navbar1";
 
 export default function Header() {
     return (
