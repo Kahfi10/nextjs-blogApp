@@ -29,12 +29,12 @@ export function AnimatedGroupCustomVariants() {
       },
       }}
     >
-      <div className="mb-8">
-      <h2 className="text-8xl font-bold mb-10 text-center">RECENT PHOTOS</h2>
-      <p className="text-gray-600 font-semibold text-3xl mb-10 text-center">
-        This section demonstrates a custom animation variant with staggered
-        children and a spring effect.
-      </p>
+      <div className="bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 p-10 rounded-lg shadow-lg mb-10">
+        <h2 className="heading-section text-8xl text-gray-700 font-bold mb-10 mt-10 text-center">RECENT PHOTOS</h2>
+        <p className="text-gray-600 font-semibold text-2xl mb-10 text-center">
+          This section demonstrates a custom animation variant with staggered
+          children and a spring effect.
+        </p>
       </div>
       <div className="grid grid-cols-2 gap-10 md:grid-cols-3 lg:grid-cols-4">
       <img

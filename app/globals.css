@@ -124,7 +124,7 @@
     @apply border-border outline-ring/50 p-0 m-0 box-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gray-50 text-foreground;
   }
 }
 
@@ -138,6 +138,10 @@
 }
 
 #smooth-wrapper {
+  font-family: 'Unbounded', sans-serif;
+}
+
+.heading-section {
   font-family: 'Unbounded', sans-serif;
 }
 
