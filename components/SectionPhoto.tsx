@@ -30,7 +30,7 @@ export function AnimatedGroupCustomVariants() {
       }}
     >
       <div className="bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 p-10 rounded-lg shadow-lg mb-10">
-        <h2 className="heading-section text-8xl text-gray-700 font-bold mb-10 mt-10 text-center">RECENT PHOTOS</h2>
+        <h2 className="heading-section text-7xl text-gray-700 font-bold mb-10 mt-10 text-center">RECENT PHOTOS</h2>
         <p className="text-gray-600 font-semibold text-2xl mb-10 text-center">
           Explore the latest photos from our community, showcasing the beauty of everyday life.
         </p>
