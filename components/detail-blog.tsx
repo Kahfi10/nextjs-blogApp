@@ -49,6 +49,55 @@ export function MorphingDialogBasicOne() {
         </div>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+          <MorphingDialogContent
+          style={{
+            borderRadius: '24px',
+          }}
+          className='pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 sm:w-[500px]'
+        >
+          <MorphingDialogImage
+            src='https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/222/2024/11/25/WhatsApp-Image-2024-11-22-at-110245-1797242786.jpeg'
+            alt='A desk lamp designed by Edouard Wilfrid Buquet in 1925. It features a double-arm design and is made from nickel-plated brass, aluminium and varnished wood.'
+            className='h-full w-full'
+          />
+          <div className='p-6'>
+            <MorphingDialogTitle className='text-2xl text-zinc-950 dark:text-zinc-50'>
+              EB27
+            </MorphingDialogTitle>
+            <MorphingDialogSubtitle className='text-zinc-700 dark:text-zinc-400'>
+              Edouard Wilfrid Buquet
+            </MorphingDialogSubtitle>
+            <MorphingDialogDescription
+              disableLayoutAnimation
+              variants={{
+                initial: { opacity: 0, scale: 0.8, y: 100 },
+                animate: { opacity: 1, scale: 1, y: 0 },
+                exit: { opacity: 0, scale: 0.8, y: 100 },
+              }}
+            >
+              <p className='mt-2 text-zinc-500 dark:text-zinc-500'>
+                Little is known about the life of E. W. Buquet. He was
+                born in France in 1866, but the time and place of his death is
+                unfortunately a mystery.
+              </p>
+              <p className='text-zinc-500'>
+                Research conducted in the 1970s revealed that he’d designed the
+                “EB 27” double-arm desk lamp in 1925, handcrafting it from
+                nickel-plated brass, aluminum and varnished wood.
+              </p>
+              <a
+                className='mt-2 inline-flex text-zinc-500 underline'
+                href='https://www.are.na/block/12759029'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Are.na block
+              </a>
+            </MorphingDialogDescription>
+          </div>
+          <MorphingDialogClose className='text-zinc-50' />
+        </MorphingDialogContent>
         <MorphingDialogContent
           style={{
             borderRadius: '24px',
@@ -97,6 +146,7 @@ export function MorphingDialogBasicOne() {
           </div>
           <MorphingDialogClose className='text-zinc-50' />
         </MorphingDialogContent>
+        </div>
       </MorphingDialogContainer>
     </MorphingDialog>
   );
