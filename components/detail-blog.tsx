@@ -15,6 +15,11 @@ import { DETAIL_BLOG } from '@/lib/data';
 export function MorphingDialogBasicOne() {
   return (
     <>
+    <div>
+      <h2 className='heading-section text-7xl mt-10 mb-10 text-center font-bold text-gray-700 dark:text-zinc-50'>
+        BLOG DETAILS
+      </h2>
+    </div>
       {DETAIL_BLOG.map((blog: any, index: number) => (
         <MorphingDialog
           key={index}
@@ -26,21 +31,21 @@ export function MorphingDialogBasicOne() {
         >
           <MorphingDialogTrigger
             style={{
-              borderRadius: '12px',
+              borderRadius: '10px',
             }}
-            className='flex max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900'
+            className='grid-cols-4 m-3 max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900'
           >
             <MorphingDialogImage
               src={blog.image}
               alt={blog.alt}
-              className='h-48 w-full object-cover'
+              className='h-100 w-full object-cover'
             />
             <div className='flex grow flex-row items-end justify-between px-3 py-2'>
               <div>
-                <MorphingDialogTitle className='text-zinc-950 dark:text-zinc-50'>
+                <MorphingDialogTitle className='text-3xl m-3 text-zinc-950 dark:text-zinc-50'>
                   {blog.title}
                 </MorphingDialogTitle>
-                <MorphingDialogSubtitle className='text-zinc-700 dark:text-zinc-400'>
+                <MorphingDialogSubtitle className='text-2xl mb-3 text-zinc-700 dark:text-zinc-400'>
                   {blog.subtitle}
                 </MorphingDialogSubtitle>
               </div>
