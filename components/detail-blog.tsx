@@ -33,19 +33,19 @@ export function MorphingDialogBasicOne() {
             style={{
               borderRadius: '10px',
             }}
-            className='grid-cols-4 m-3 max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900'
+            className='grid-cols-4 m-5 max-w-[270px] flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900'
           >
             <MorphingDialogImage
               src={blog.image}
               alt={blog.alt}
-              className='h-100 w-full object-cover'
+              className='h-150 w-full object-cover'
             />
             <div className='flex grow flex-row items-end justify-between px-3 py-2'>
               <div>
                 <MorphingDialogTitle className='text-3xl m-3 text-zinc-950 dark:text-zinc-50'>
                   {blog.title}
                 </MorphingDialogTitle>
-                <MorphingDialogSubtitle className='text-2xl mb-3 text-zinc-700 dark:text-zinc-400'>
+                <MorphingDialogSubtitle className='text-start text-2xl mb-3 ml-3 text-zinc-700 dark:text-zinc-400'>
                   {blog.subtitle}
                 </MorphingDialogSubtitle>
               </div>
@@ -105,20 +105,20 @@ export function MorphingDialogBasicOne() {
               </MorphingDialogContent>
               <MorphingDialogContent
                 style={{
-                  borderRadius: '24px',
+                  borderRadius: '15px',
                 }}
                 className='pointer-events-auto relative flex h-auto w-full flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 sm:w-[500px]'
               >
                 <MorphingDialogImage
-                  src='https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/222/2024/11/25/WhatsApp-Image-2024-11-22-at-110245-1797242786.jpeg'
-                  alt='A desk lamp designed by Edouard Wilfrid Buquet in 1925. It features a double-arm design and is made from nickel-plated brass, aluminium and varnished wood.'
+                  src={blog.image}
+                  alt={blog.alt}
                   className='h-full w-full'
                 />
                 <div className='p-6'>
-                  <MorphingDialogTitle className='text-2xl text-zinc-950 dark:text-zinc-50'>
+                  <MorphingDialogTitle className='text-4xl text-zinc-950 dark:text-zinc-50'>
                     {blog.title}
                   </MorphingDialogTitle>
-                  <MorphingDialogSubtitle className='text-zinc-700 dark:text-zinc-400'>
+                  <MorphingDialogSubtitle className='text-2xl  mt-3 text-zinc-700 dark:text-zinc-400'>
                     {blog.subtitle}
                   </MorphingDialogSubtitle>
                   <MorphingDialogDescription
@@ -129,10 +129,7 @@ export function MorphingDialogBasicOne() {
                       exit: { opacity: 0, scale: 0.8, y: 100 },
                     }}
                   >
-                    <p className='mt-2 text-zinc-500 dark:text-zinc-500'>
-                      {blog.content}
-                    </p>
-                    <p className='text-zinc-500'>
+                    <p className='text-xl mt-2 text-zinc-500 dark:text-zinc-500'>
                       {blog.content}
                     </p>
                     <a
